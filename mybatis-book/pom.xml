@@ -6,12 +6,12 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.1.RELEASE</version>
+        <version>2.5.7</version>
     </parent>
     <groupId>com.blog4java</groupId>
     <artifactId>mybatis-book</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <modules>
         <module>mybatis-common</module>
         <module>mybatis-chapter01</module>
@@ -19,18 +19,21 @@
         <module>mybatis-chapter03</module>
         <module>mybatis-chapter04</module>
         <module>mybatis-chapter05</module>
-        <module>mybatis-chapter06</module>
+<!--        <module>mybatis-chapter06</module>-->
         <module>mybatis-chapter07</module>
         <module>mybatis-chapter08</module>
         <module>mybatis-chapter09</module>
         <module>mybatis-chapter10</module>
         <module>mybatis-chapter11</module>
         <module>mybatis-chapter12</module>
-
-
         <module>mybatis-plugin</module>
 
     </modules>
+
+    <properties>
+        <hsqldb.version>2.5.2</hsqldb.version>
+    </properties>
+
     <build>
         <resources>
             <resource>
@@ -78,9 +81,10 @@
         <dependency>
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
-            <version>2.4.0</version>
+            <version>${hsqldb.version}</version>
             <scope>test</scope>
         </dependency>
+
 
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -91,13 +95,7 @@
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.5.0-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.blog4java</groupId>
-            <artifactId>mybatis-common</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>3.5.7</version>
         </dependency>
 
         <dependency>

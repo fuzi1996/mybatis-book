@@ -5,12 +5,12 @@
     <parent>
         <artifactId>mybatis-book</artifactId>
         <groupId>com.blog4java</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>mybatis-chapter02</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
 
     <dependencies>
@@ -18,6 +18,11 @@
             <groupId>tomcat</groupId>
             <artifactId>naming-java</artifactId>
             <version>5.0.28</version>
+        </dependency>
+        <dependency>
+            <groupId>com.blog4java</groupId>
+            <artifactId>mybatis-common</artifactId>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>tomcat</groupId>
